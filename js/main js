@@ -1,0 +1,22 @@
+ <!-- JavaScript -->
+  <script>
+    // Alert saat halaman dibuka
+    window.onload = function() {
+    }
+
+    // Tombol Kembali
+    document.getElementById("backBtn").addEventListener("click", function() {
+      window.history.back();
+    });
+
+    // Ubah warna saat diklik
+    const boxes = document.querySelectorAll(".warna-box span");
+    boxes.forEach(box => {
+      box.addEventListener("click", function() {
+        const currentColor = this.style.backgroundColor;
+        this.style.backgroundColor = "hsl(" + Math.floor(Math.random()*360) + ", 80%, 60%)";
+      });
+    });
+  </script>
+</body>
+</html>
