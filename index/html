@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* Header */
+    .site-header {
+      background: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-header .logo {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .site-header .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero-img {
+      width: 100%;
+      height: 200px; /* kecil */
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero-content h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .hero-content p {
+      margin: 5px 0 15px;
+    }
+    .cta {
+      padding: 10px 20px;
+      background: #ff4081;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+    }
+    .cta:hover {
+      background: #ff80ab;
+    }
+
+    /* Content */
+    .content {
+      padding: 30px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .box-demo {
+      background: #ff80ab;
+      padding: 20px;
+      border: 2px dashed #333;
+      margin: 15px 0;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="logo">Frontend</h1>
+    <nav class="nav">
+      <a href="#">Style guide</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80" alt="Pemandangan Senja Pink" class="hero-img">
+    <div class="hero-content">
+      <h2>Belajar Frontend Developer</h2>
+      <p>Kuasai HTML, CSS, dan JavaScript</p>
+      <button class="cta" onclick="mulai()">Mulai Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="content">
+    <article class="card">
+      <h3>demo box model</h3>
+      <div class="box-demo">kotak contoh</div>
+      <p>Gunakan Devtools untuk melihat margin, border, padding dan content</p>
+    </article>
+  </main> 
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; wulan imut 2025 Frontend</p>
+  </footer>
+
+  <script>
+    function mulai() {
+      alert("Selamat belajar Frontend di SMK!");
+    }
+  </script>
+</body>
+        </html>
